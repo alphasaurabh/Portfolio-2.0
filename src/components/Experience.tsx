@@ -37,7 +37,7 @@ const experiences: ExperienceItem[] = [
   },
   {
     id: 4,
-    title: "Summer Trainee",
+    title: "AI Summer Trainee",
     company: "Samsung Innovation Campus",
     description: "During my summer training at SIC, I completed their Artificial Intelligence program, where I learned the core foundations of AI and applied them through hands-on projects. The training covered essential concepts such as machine learning, deep learning, neural networks, and real-world AI applications. I worked on practical exercises, implemented algorithms, and gained exposure to industry-relevant tools used in modern AI workflows.",
     year: " Jun 2024 - Sep 2024",
