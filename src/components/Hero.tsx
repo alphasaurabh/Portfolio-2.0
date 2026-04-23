@@ -169,7 +169,7 @@ export const Hero = () => {
               variant="outline"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-soft hover:shadow-strong transition-all duration-200 font-body font-semibold px-8 rounded-full"
             >
-              <a href="https://drive.google.com/file/d/188BwILV5r1zykj_GxmFoi16K85bkL3JX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1e_BlxhoCRCPnE-da9gFcWIVdKduFYU01/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Download CV
               </a>
             </Button>
