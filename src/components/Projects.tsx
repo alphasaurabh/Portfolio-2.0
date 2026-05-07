@@ -66,7 +66,7 @@ const projects: Project[] = [
     description: "A modern, full-stack URL shortener and QR code generator built with Next.js 14 and MongoDB, featuring real-time click tracking and instant redirects.",
     tags: ["HTML", "CSS", "JavaScript" , "MongoDB" , "Postman" , "API"],
     thumbnail: d1,
-    liveUrl: "https://github.com/alphasaurabh/ShortenX"
+    liveUrl: "https://shortenx-xi.vercel.app/"
   },
   {
     id: 3,
