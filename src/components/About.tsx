@@ -23,6 +23,7 @@ const skills = [
   { name: "IntelliJ",      logo: "https://raw.githubusercontent.com/alphasaurabh/Portfolio-2.0/main/src/assets/intellij.png" },
 ];
 
+
 const highlights = [
   { icon: Code, label: "Clean Code", description: "Writing maintainable, scalable solutions" },
   { icon: Palette, label: "Design Systems", description: "Building cohesive user experiences" },
