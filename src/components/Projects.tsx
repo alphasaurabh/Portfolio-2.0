@@ -10,6 +10,7 @@ import a5 from "@/assets/projects/a5.png";
 import b1 from "@/assets/projects/b1.png";
 import c1 from "@/assets/projects/c1.png";
 import d1 from "@/assets/projects/d1.png";
+import e1 from "@/assets/projects/e1.png";
 
 interface Project {
   id: number;
@@ -60,16 +61,24 @@ const projects: Project[] = [
     },
     liveUrl: "https://acadify-mu.vercel.app/",
   },
-   {
+  {
     id: 2,
+    title: "UniDrop",
+    description: "UniDrop is a full-stack student marketplace platform that enables users to buy, sell, and exchange products within a college community through a secure and responsive web application.",
+    tags: ["TypeScript" , "SupaBase" , "Next.js" , "Postgre SQL" , "Framer Motion"],
+    thumbnail: e1 ,
+    liveUrl: "https://unidrop.saurabhdev.me"
+  },
+   {
+    id: 3,
     title: "ShortenX",
     description: "A modern, full-stack URL shortener and QR code generator built with Next.js 14 and MongoDB, featuring real-time click tracking and instant redirects.",
     tags: ["HTML", "CSS", "JavaScript" , "MongoDB" , "Postman" , "API"],
     thumbnail: d1,
-    liveUrl: "https://shortenx-xi.vercel.app/"
+    liveUrl: "https://shortenx.saurabhdev.me"
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio 1.0",
     description: "Developed a beginner portfolio site using HTML, CSS, and JavaScript to display my projects and practice front-end fundamentals.",
     tags: ["HTML", "CSS", "JavaScript"],
@@ -77,7 +86,7 @@ const projects: Project[] = [
     liveUrl: "https://github.com/alphasaurabh/Portfolio-1.0"
   },
   {
-    id: 4,
+    id: 5,
     title: "Netflix Clone",
     description: "Built a basic Netflix-style UI using only HTML & CSS to practice layout and responsive design.",
     tags: ["HTML", "CSS", "UI"],
