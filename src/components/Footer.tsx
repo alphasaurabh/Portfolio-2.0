@@ -42,7 +42,7 @@ export const Footer = () => {
           {/* Copyright */}
           <div className="text-center space-y-2">
             <p className="text-sm font-body text-background/70 flex items-center gap-2 justify-center">
-               © 2025 Saurabh Chandravanshi. All rights reserved.
+               © 2026 Saurabh Chandravanshi. All rights reserved.
             </p>
           </div>
 
