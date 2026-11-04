@@ -12,6 +12,14 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    id: 5,
+    title: "Software Development Engineer (SDE) Intern",
+    company: "Grid Sphere · Hybrid",
+    description: "Developed a scalable digital commerce platform for a jewelry brand, building responsive product interfaces and customer-facing experiences across the complete e-commerce application. Managed frontend architecture and global production setup, integrating deployment, domains, environment configurations, and third-party services while optimizing performance across multiple devices.",
+    year: "Jun 2026 - Present",
+    detailUrl: "#experience-detail-5"
+  },
+  {
     id: 1,
     title: "Cloud Computing Co-Lead ",
     company: "Microsoft Learn Student Ambassadors (MLSA), Gautam Budhha University",

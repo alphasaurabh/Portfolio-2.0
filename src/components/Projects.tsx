@@ -11,6 +11,12 @@ import b1 from "@/assets/projects/b1.png";
 import c1 from "@/assets/projects/c1.png";
 import d1 from "@/assets/projects/d1.png";
 import e1 from "@/assets/projects/e1.png";
+import unidropNew from "@/assets/projects/unidrop-new.png";
+import hrone from "@/assets/projects/hrone.png";
+import resumeiq from "@/assets/projects/resumeiq.png";
+import aurum from "@/assets/projects/aurum.png";
+import uttarakhandCopilot from "@/assets/projects/uttarakhand-copilot.png";
+import butterflyUi from "@/assets/projects/butterfly-ui.png";
 
 interface Project {
   id: number;
@@ -41,7 +47,6 @@ const projects: Project[] = [
       "A responsive landing page designed for an online learning platform brand.",
     tags: ["React", "TypeScript", "Tailwind"],
     thumbnail: a1,
-    featured: true,
     caseStudy: {
       heroImage: a1,
       problem:
@@ -66,7 +71,8 @@ const projects: Project[] = [
     title: "UniDrop",
     description: "UniDrop is a full-stack student marketplace platform that enables users to buy, sell, and exchange products within a college community through a secure and responsive web application.",
     tags: ["TypeScript" , "SupaBase" , "Next.js" , "Postgre SQL" , "Framer Motion"],
-    thumbnail: e1 ,
+    thumbnail: unidropNew,
+    featured: true,
     liveUrl: "https://unidrop.saurabhdev.me"
   },
    {
@@ -92,6 +98,46 @@ const projects: Project[] = [
     tags: ["HTML", "CSS", "UI"],
     thumbnail: b1,
     liveUrl: "https://github.com/alphasaurabh/Netflix-Clone"
+  },
+  {
+    id: 6,
+    title: "HRone",
+    description: "An employee-focused ERP system for managing attendance, employee records, analytics, and everyday workplace operations.",
+    tags: ["React", "TypeScript", "ERP", "HR Tech"],
+    thumbnail: hrone,
+    liveUrl: "https://github.com/alphasaurabh/hrone",
+  },
+  {
+    id: 7,
+    title: "ResumeIQ",
+    description: "An AI-powered resume analyzer that provides ATS scores, matches resumes against job descriptions, and delivers tailored recommendations to improve interview readiness.",
+    tags: ["AI", "ATS Analysis", "Resume Optimization", "Job Matching"],
+    thumbnail: resumeiq,
+    liveUrl: "https://github.com/alphasaurabh/ResumeIQ",
+  },
+  {
+    id: 8,
+    title: "AURUM",
+    description: "A luxury jewelry website crafted to showcase timeless collections of rings, necklaces, bracelets, and earrings through an elegant shopping experience.",
+    tags: ["React", "TypeScript", "E-commerce", "Luxury UI"],
+    thumbnail: aurum,
+    liveUrl: "https://github.com/alphasaurabh/aurum",
+  },
+  {
+    id: 9,
+    title: "Uttarakhand Copilot",
+    description: "An AI-powered trip planner for Uttarakhand that creates personalized journeys based on travel preferences, destinations, pace, and experiences.",
+    tags: ["AI", "Travel Planning", "Uttarakhand", "Personalization"],
+    thumbnail: uttarakhandCopilot,
+    liveUrl: "https://github.com/alphasaurabh/ai-uttarakhand-tourism-copilot",
+  },
+  {
+    id: 10,
+    title: "Butterfly UI",
+    description: "A motion-first React UI library with reusable, typed components, animations, effects, layouts, and sections designed for fast, polished product development.",
+    tags: ["React", "TypeScript", "UI Library", "Framer Motion"],
+    thumbnail: butterflyUi,
+    liveUrl: "https://github.com/alphasaurabh/ButterflyUI",
   },
 ];
 

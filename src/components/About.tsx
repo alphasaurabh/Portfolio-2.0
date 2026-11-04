@@ -102,16 +102,20 @@ export const About: React.FC = () => {
 
           <div className="relative overflow-hidden">
             <div className="marquee">
-              <div className="marquee-track flex items-center gap-6">
-                {skills.concat(skills).map((skill, index) => (
-                  <div
-                    key={`${skill.name}-${index}`}
-                    className="flex-shrink-0 w-[140px] h-[140px] bg-white rounded-2xl shadow-soft transition-transform duration-200 flex flex-col items-center justify-center border border-border/50"
-                  >
-                    <div className="w-20 h-20 flex items-center justify-center">
-                      <img src={skill.logo} alt={skill.name} className="max-w-full max-h-full object-contain select-none" />
-                    </div>
-                    <span className="mt-2 text-sm font-medium">{skill.name}</span>
+              <div className="marquee-track">
+                {[0, 1].map((group) => (
+                  <div className="marquee-group flex items-center gap-6" key={group} aria-hidden={group === 1}>
+                    {skills.map((skill) => (
+                      <div
+                        key={`${skill.name}-${group}`}
+                        className="flex-shrink-0 w-[140px] h-[140px] bg-white rounded-2xl shadow-strong transition-transform duration-200 flex flex-col items-center justify-center border border-border/50"
+                      >
+                        <div className="w-20 h-20 flex items-center justify-center">
+                          <img src={skill.logo} alt={skill.name} className="max-w-full max-h-full object-contain select-none" />
+                        </div>
+                        <span className="mt-2 text-sm font-medium">{skill.name}</span>
+                      </div>
+                    ))}
                   </div>
                 ))}
               </div>
@@ -119,13 +123,14 @@ export const About: React.FC = () => {
           </div>
 
           <style>{`
-            .marquee { width: 100%; }
-            .marquee-track { display: flex; align-items: center; }
+            .marquee { width: 100%; background: transparent; }
+            .marquee-track { display: flex; width: max-content; }
+            .marquee-group { flex-shrink: 0; padding-right: 1.5rem; background: transparent; }
             @keyframes marquee-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
             @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none !important; } }
-            .marquee-track { animation: marquee-left 22s linear infinite; }
+            .marquee-track { animation: marquee-left 28s linear infinite; background: transparent; }
             .marquee:hover .marquee-track, .marquee:focus-within .marquee-track { animation-play-state: paused; }
-            @media (max-width: 640px) { .marquee-track { animation-duration: 14s; } }
+            @media (max-width: 640px) { .marquee-track { animation-duration: 19s; } }
           `}</style>
         </div>
       </div>
