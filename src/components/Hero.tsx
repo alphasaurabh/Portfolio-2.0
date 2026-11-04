@@ -3,6 +3,17 @@ import pfp_saurabh from "@/assets/pfp_saurabh.jpg";
 import { ArrowRight, Code, Sparkles, Figma, Terminal, Mouse, Pen, Circle, Triangle } from "lucide-react";
 import { NetworkEffect } from "@/components/NetworkEffect";
 
+const particles = [
+  { left: 12, top: 18, delay: 0, duration: 18 },
+  { left: 28, top: 42, delay: 2, duration: 21 },
+  { left: 44, top: 72, delay: 4, duration: 16 },
+  { left: 61, top: 26, delay: 6, duration: 23 },
+  { left: 73, top: 58, delay: 8, duration: 19 },
+  { left: 84, top: 34, delay: 10, duration: 24 },
+  { left: 37, top: 86, delay: 12, duration: 17 },
+  { left: 92, top: 78, delay: 14, duration: 22 },
+];
+
 export const Hero = () => {
   return (
     <section
@@ -50,15 +61,15 @@ export const Hero = () => {
 
       {/* Animated Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(8)].map((_, i) => (
+        {particles.map((particle, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-primary/20 rounded-full animate-float opacity-0"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${i * 2}s`,
-              animationDuration: `${15 + Math.random() * 10}s`,
+              left: `${particle.left}%`,
+              top: `${particle.top}%`,
+              animationDelay: `${particle.delay}s`,
+              animationDuration: `${particle.duration}s`,
             }}
           />
         ))}

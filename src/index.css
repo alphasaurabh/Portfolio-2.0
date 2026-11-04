@@ -165,14 +165,21 @@ All colors MUST be HSL.
 
   .animate-float {
     animation: float 6s ease-in-out infinite;
+    will-change: transform;
   }
 
   .animate-glow-pulse {
     animation: glow-pulse 6s ease-in-out infinite;
+    will-change: opacity, transform;
   }
 
   .animate-fade-slide-up {
     animation: fade-slide-up 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  section:not(#home) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 800px;
   }
 
   @media (prefers-reduced-motion: reduce) {
